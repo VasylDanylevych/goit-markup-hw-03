@@ -8,6 +8,8 @@
     --black-color: #000;
     --hero-btn-hover-color: #188CE8;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --page-border: #ECECEC;
+    --item-border: #EEEEEE;
 
 }
 
@@ -22,6 +24,11 @@ body {
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .list {
@@ -57,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* ШАПКА */
 
 .page-header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--page-border);
 }
 
 .container-header {
@@ -109,8 +116,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--black-color);
     font-size: 26px;
     line-height: 1.19;
-
-    display: flex;
     
 }
 
@@ -153,25 +158,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
     padding-top: 200px;
     padding-bottom: 200px;
-}
-
-.hero-container {
-    
-    max-width: 700px;
-    margin: 0 auto;
     text-align: center;
 }
+
 
 .hero-title {
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
 }
 
@@ -186,7 +187,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     cursor: pointer;
 
     border-radius: 4px;
-    padding: 10px 34px;
+    padding: 10px 32px;
     border-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -299,10 +300,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     display: flex;
 }
 
-.work .item {
-    display: block;
-    max-width: 100%;
-}
 
 .work .item:not(:last-child) {
     margin-right: 30px;
@@ -318,9 +315,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding-bottom: 60px;
 }
 
+address {
+    margin-top: 20px;
+}
+
 .footer .logo {
     color: var(--white-color);
-    margin-bottom: 20px;
 }
 
 .main-address {
@@ -396,6 +396,8 @@ margin-bottom: 9px;
     font-size: 18px;
     line-height: 2.00;
     letter-spacing: 0.06em;
+
+    margin-bottom: 4px;
 }
 
 .project-item {
@@ -411,15 +413,12 @@ margin-bottom: 9px;
     
 }
 
-.project-img {
-    display: block;
-}
 
 .project .item {
     padding: 20px 24px;
-    border-left: 1px solid #EEEEEE;;
-    border-right: 1px solid #EEEEEE;;
-    border-bottom: 1px solid #EEEEEE;;
+    border-left: 1px solid var(--item-border);
+    border-right: 1px solid var(--item-border);
+    border-bottom: 1px solid var(--item-border);
 }
 
 .project-list {
