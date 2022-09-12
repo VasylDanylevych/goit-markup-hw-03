@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: var(--primary-bgc-color);
 
     padding-top: 200px;
-    padding-bottom: 275px;
+    padding-bottom: 200px;
 }
 
 .hero-container {
