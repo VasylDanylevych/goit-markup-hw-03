@@ -56,13 +56,16 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* ШАПКА */
 
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .container-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-
 
 }
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -147,16 +150,16 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* HERO */
 .hero {
     background-color: var(--primary-bgc-color);
-    
+
+    padding-top: 200px;
+    padding-bottom: 275px;
 }
 
 .hero-container {
-    display: flex;
-    height: 600px;
+    
     max-width: 700px;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-title {
@@ -184,18 +187,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
     border-radius: 4px;
     padding: 10px 34px;
-    border: 1px solid transparent;
-    display: block;
-    margin: 0 auto;
+    border-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .main-btn:hover,
 .main-btn:focus {
     background-color: var(--hero-btn-hover-color);
-    border: 1px solid transparent;
+    border-color: transparent;
 }
 /* features */
+
+.features-section {
+    padding-top: 94px;
+}
 
 .features {
     display: flex;
@@ -243,6 +248,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+
+.team-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -254,19 +267,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 .team-member {
     font-weight: 500;
-    
-    padding-top: 30px;
-    padding-bottom: 10px;
-    text-align: center;
-
+    margin-bottom: 10px;
     
 }
+
 .team-position {
     color: var(--secondary-tex-color);
-    padding-bottom: 30px;
-    text-align: center;
 
 } 
+
 .team-description {
     background-color: var(--white-color);
 
@@ -288,6 +297,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .work {
     display: flex;
+}
+
+.work .item {
+    display: block;
+    max-width: 100%;
 }
 
 .work .item:not(:last-child) {
@@ -331,7 +345,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--accent-color);
 }
 
-.list .item:not(:last-child) {
+.footer-item:not(:last-child) {
 margin-bottom: 9px;
 }
 
